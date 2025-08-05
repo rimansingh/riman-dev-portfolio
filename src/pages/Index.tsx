@@ -141,8 +141,7 @@ const Index = () => {
             ].map((project, index) => (
               <div 
                 key={index} 
-                className="bg-card rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-border"
-              >
+                className="bg-card rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-border">
                 <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {project.description}
@@ -152,8 +151,7 @@ const Index = () => {
                   {project.tech.map((tech, techIndex) => (
                     <span 
                       key={techIndex}
-                      className="px-3 py-1 bg-muted text-muted-foreground text-sm rounded-lg font-medium"
-                    >
+                      className="px-3 py-1 bg-muted text-muted-foreground text-sm rounded-lg font-medium">
                       {tech}
                     </span>
                   ))}
@@ -164,16 +162,14 @@ const Index = () => {
                     href="https://github.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-primary transition-colors duration-200 font-medium"
-                  >
+                    className="text-muted-foreground hover:text-primary transition-colors duration-200 font-medium">
                     GitHub →
                   </a>
                   <a 
                     href="https://demo.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-primary transition-colors duration-200 font-medium"
-                  >
+                    className="text-muted-foreground hover:text-primary transition-colors duration-200 font-medium">
                     Live Demo →
                   </a>
                 </div>
