@@ -1,3 +1,5 @@
+import { Certifications } from "@/components/Certifications";
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -11,6 +13,7 @@ const Index = () => {
               <a href="#projects" className="text-muted-foreground hover:text-primary transition-colors">Projects</a>
               <a href="#skills" className="text-muted-foreground hover:text-primary transition-colors">Skills</a>
               <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</a>
+              <a href="#certifications" className="text-muted-foreground hover:text-primary transition-colors">Certifications</a>
             </div>
           </div>
         </div>
@@ -235,6 +238,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Certifications Section */}
+      <Certifications />
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 bg-background">
