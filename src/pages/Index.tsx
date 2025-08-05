@@ -1,11 +1,3 @@
-import Navigation from "@/components/Navigation";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -55,7 +47,7 @@ const Index = () => {
 
       {/* About Section */}
       <section id="about" className="py-20 px-6 bg-card">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
             <div className="w-24 h-1 bg-primary mx-auto"></div>
@@ -72,7 +64,6 @@ const Index = () => {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I believe in creating future-ready infrastructure by combining traditional engineering practices with modern AI capabilities, driving innovation across both development and operations.
               </p>
-
             </div>
             
             <div className="bg-muted/50 rounded-2xl p-8 shadow-lg">
