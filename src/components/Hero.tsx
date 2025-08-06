@@ -9,8 +9,7 @@ const Hero = () => {
           Cloud & DevOps Engineer
         </p>
         <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-          Building scalable cloud infrastructure and streamlining DevOps workflows 
-          with expertise in LLM, networking, and modern deployment strategies.
+          Passionate about building resilient cloud platforms and simplifying DevOps with intelligent automation, AI, and a deep understanding of networking.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="#projects" className="btn-hero inline-block">
