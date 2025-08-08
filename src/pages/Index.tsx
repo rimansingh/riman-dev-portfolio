@@ -1,5 +1,4 @@
 import { Certifications } from "@/components/Certifications";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Index = () => {
   return (
@@ -32,29 +31,20 @@ const Index = () => {
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
             Passionate about building resilient cloud platforms and simplifying DevOps with intelligent automation, AI, and a deep understanding of networking.
           </p>
-
-          <div className="flex gap-4 items-center justify-center mb-12">
-            <a href="https://github.com/rimansingh?tab=repositories" target="_blank" rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground text-xl">
-              <FaGithub />
-            </a>
-            <a href="https://www.linkedin.com/in/rimandeep-singh/" target="_blank" rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground text-xl">
-              <FaLinkedin />
-            </a>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#projects"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-xl font-medium transition-all duration-200 hover:shadow-lg inline-block">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="#projects" 
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-xl font-medium transition-all duration-200 hover:shadow-lg inline-block"
+            >
               View My Work
             </a>
-            <a href="#contact"
-              className="text-muted-foreground hover:text-foreground border border-border hover:border-primary/20 px-6 py-3 rounded-lg transition-all duration-200 inline-block">
+            <a 
+              href="#contact" 
+              className="text-muted-foreground hover:text-foreground border border-border hover:border-primary/20 px-6 py-3 rounded-lg transition-all duration-200 inline-block"
+            >
               Get in Touch
             </a>
           </div>
-
         </div>
       </section>
 
@@ -315,8 +305,12 @@ const Index = () => {
               <p className="text-muted-foreground text-sm">View my code</p>
             </a>
 
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
-              className="bg-card p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-border group">
+            <a 
+              href="/resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-card p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-border group"
+            >
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors duration-300">
                 <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
