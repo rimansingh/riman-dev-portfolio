@@ -122,35 +122,42 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Cloud Infrastructure Automation",
-                description: "Terraform-based multi-cloud infrastructure provisioning with automated scaling and monitoring across AWS, Azure, and GCP.",
-                tech: ["Terraform", "AWS", "Docker", "Kubernetes"]
+                title: "Website Deployment Pipeline",
+                description: "Automated multi-instance infrastructure provisioning using Terraform, Ansible configuration, and Jenkins CI/CD pipeline on AWS.",
+                tech: ["Terraform", "Ansible", "Jenkins", "AWS"],
+                github: "https://github.com/rimansingh/DevOps-Project-Hub/tree/main/05-Terraform-Ansible-Jenkins",
+                demo: null
               },
               {
-                title: "AI-Powered DevOps Pipeline",
-                description: "Intelligent CI/CD pipeline that uses machine learning to optimize deployment strategies and predict potential failures.",
-                tech: ["Jenkins", "Python", "TensorFlow", "GitHub Actions"]
+                title: "CI/CD Pipeline with Jenkins & Docker",
+                description: "End-to-end CI/CD pipeline using Jenkins and Docker to automate building, testing, and deploying a containerized web app on code push via GitHub webhook.",
+                tech: ["Jenkins", "Docker", "GitHub", "Nginx"],
+                github: "https://github.com/rimansingh/DevOps-Project-Hub/tree/main/04-Jenkins-CI-CD-with-Docker",
+                demo: null
               },
               {
-                title: "Network Security Dashboard",
-                description: "Real-time network monitoring and threat detection system with automated response capabilities and comprehensive analytics.",
-                tech: ["React", "Node.js", "Elasticsearch", "Grafana"]
+                title: "Infra Automation with Terraform & Ansible",
+                description: "Provisioned multi-instance AWS infrastructure using Terraform and configured role-based environments using Ansible with Java, Python, and MySQL.",
+                tech: ["Terraform", "Ansible", "AWS", "MySQL", "Python"],
+                github: "https://github.com/rimansingh/DevOps-Project-Hub/tree/main/03-terraform-ansible-devops",
+                demo: null
               },
               {
-                title: "LLM Model Deployment Platform",
-                description: "Scalable platform for deploying and managing large language models with optimized inference and vector database integration.",
-                tech: ["FastAPI", "Docker", "Pinecone", "OpenAI"]
+                title: "Local Django ECS Simulation",
+                description: "Simulated AWS ECS and ECR deployment pipeline using Docker and Docker Compose to containerize and run a Django app across local machines.",
+                tech: ["Django", "Docker", "Docker Compose", "Python"],
+                github: "https://github.com/rimansingh/DevOps-Project-Hub/tree/main/02-Local-Django-ECS-Simulation",
+                demo: null
               },
               {
-                title: "Microservices Orchestration",
-                description: "Complete microservices architecture with service mesh, observability, and automated canary deployments.",
-                tech: ["Kubernetes", "Istio", "Prometheus", "Jaeger"]
+                title: "Linux DevOps Lab with Vagrant",
+                description: "Simulated EC2 and EBS setup using Vagrant and VirtualBox to practice Linux system administration tasks like user/group management, file ops, and volume mounting.",
+                tech: ["Vagrant", "VirtualBox", "Linux", "Shell"],
+                github: "https://github.com/rimansingh/DevOps-Project-Hub/tree/main/01-Linux%20DevOps%20Lab%20using%20Vagrant",
+                demo: null
               },
-              {
-                title: "Cloud Cost Optimizer",
-                description: "ML-driven cost optimization tool that analyzes cloud usage patterns and provides automated cost reduction recommendations.",
-                tech: ["Python", "AWS Lambda", "Data Science", "Streamlit"]
-              }
+
+
             ].map((project, index) => (
               <div 
                 key={index} 
@@ -172,19 +179,19 @@ const Index = () => {
                 
                 <div className="flex gap-4">
                   <a 
-                    href="https://github.com" 
+                    href={project.github} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors duration-200 font-medium">
                     GitHub →
                   </a>
-                  <a 
-                    href="https://demo.com" 
+                  {/* <a 
+                    href={project.demo} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors duration-200 font-medium">
                     Live Demo →
-                  </a>
+                  </a> */}
                 </div>
               </div>
             ))}
