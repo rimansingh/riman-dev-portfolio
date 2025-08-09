@@ -1,4 +1,5 @@
 import { Certifications } from "@/components/Certifications";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Index = () => {
   return (
@@ -31,17 +32,23 @@ const Index = () => {
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
             Passionate about building resilient cloud platforms and simplifying DevOps with intelligent automation, AI, and a deep understanding of networking.
           </p>
+          <div className="flex gap-4 items-center justify-center mb-12">
+            <a href="https://github.com/rimansingh?tab=repositories" target="_blank" rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground text-xl">
+              <FaGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/rimandeep-singh/" target="_blank" rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground text-xl">
+              <FaLinkedin />
+            </a>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="#projects" 
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-xl font-medium transition-all duration-200 hover:shadow-lg inline-block"
-            >
+            <a href="#projects" 
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 rounded-xl font-medium transition-all duration-200 hover:shadow-lg inline-block">
               View My Work
             </a>
-            <a 
-              href="#contact" 
-              className="text-muted-foreground hover:text-foreground border border-border hover:border-primary/20 px-6 py-3 rounded-lg transition-all duration-200 inline-block"
-            >
+            <a href="#contact" 
+              className="text-muted-foreground hover:text-foreground border border-border hover:border-primary/20 px-6 py-3 rounded-lg transition-all duration-200 inline-block">
               Get in Touch
             </a>
           </div>
